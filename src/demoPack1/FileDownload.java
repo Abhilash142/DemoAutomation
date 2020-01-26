@@ -27,6 +27,7 @@ public class FileDownload {
 		if(driver.findElement(By.xpath("")).isDisplayed())
 		{
 			System.out.println("Hi");
+			System.out.println("Hello");
 		}
 		 
 		driver.findElement(By.xpath("//span[@class='icon-zamknij']")).click();
