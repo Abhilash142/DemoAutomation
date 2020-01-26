@@ -24,16 +24,11 @@ public class FileDownload {
 		Thread.sleep(5000);
 		
 		driver.findElement(By.xpath("//a[text()='Anúncios' and @id='se_accountAds']")).click();
-		/*try {
-		    driver.switchTo().frame(driver.findElement(By.xpath("//div[@class='bootbox-body']")));
-		    WebDriverWait wait=new WebDriverWait(driver,15);
-		    wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.tagName("html"))));
-		    
-		    driver.findElement(arg0)*/
-		    
-		    
-		    
-		
+		if(driver.findElement(By.xpath("")).isDisplayed())
+		{
+			System.out.println("Hi");
+		}
+		 
 		driver.findElement(By.xpath("//span[@class='icon-zamknij']")).click();
 		Thread.sleep(5000);
 
